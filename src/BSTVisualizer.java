@@ -179,7 +179,12 @@ public class BSTVisualizer extends JFrame {
             if (bst.search(val)) {
                 appendOutput("![ALERT] Demon ID " + val + " is already contained.");
             } else {
-                bst.insert(val);
+//                bst.insert(val);
+                bst.insert(50);
+                bst.insert(75);
+                bst.insert(25);
+                bst.insert(10);
+
                 appendOutput(">> CAPTURED: Demon " + val + " locked in Containment Cell.");
                 setStatus("ENTITY " + val + " SECURED", SPIRIT_GREEN);
             }
